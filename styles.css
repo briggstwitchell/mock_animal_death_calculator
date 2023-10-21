@@ -1,0 +1,49 @@
+.scrollable-dropdown {
+    max-height: 150px; /* Set this to your desired max height */
+    overflow-y: auto;
+}
+
+.col {
+    width: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.formatted-container{
+    margin: 70px auto;
+    text-align: center;
+    align-self: center;
+}
+
+.square-image {
+    width: 300px;  
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 1.5em;
+  }
+
+  body{
+    background-color: rgb(214, 214, 214);
+  }
+
+  body .container{
+    padding: 20px;
+    background-color: white;
+    border-radius: 0.5em;
+  }
+
+  .btn-primary{
+    background-color: red;
+    border: red;
+  }
+
+  .btn-primary:hover {
+    background-color: rgb(255, 97, 97);
+  }
+
+
+  .btn-primary:active{
+    background-color: rgb(255, 97, 97);
+  }
