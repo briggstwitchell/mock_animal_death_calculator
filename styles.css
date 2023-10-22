@@ -12,7 +12,7 @@
   }
 
 .formatted-container{
-    margin: 70px auto;
+    margin: 10px auto;
     text-align: center;
     align-self: center;
 }
@@ -25,12 +25,12 @@
   }
 
   body{
-    background-color: rgb(214, 214, 214);
+    background-color: rgb(55, 55, 55);
   }
 
   body .container{
     padding: 20px;
-    background-color: white;
+    background-color: rgb(85, 85, 85);
     border-radius: 0.5em;
   }
 
