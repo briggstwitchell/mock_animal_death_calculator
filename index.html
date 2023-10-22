@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animal death calculator</title>
+  <!-- Bootstrap CSS -->
+  <script src="https://kit.fontawesome.com/778ab37c99.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container formatted-container">
+        <h1>Animal death calculator (demo)</h1>
+
+    </div>
+
+    <div class="container formatted-container main-container">
+
+        <div class="row mb-3">
+            <div class="col text-center">
+              <img src="https://images.ctfassets.net/ww1ie0z745y7/2Lr3p2QXJGN1P1llD0iW11/b7d20a5efb3d58d0faf85b31e583fa65/DairyVealFarm_Spain_JMcArthur2010-0125.jpg?fm=webp&w=1280" alt="Image 1" class="img-fluid square-image">
+            </div>
+            <div class="col text-center">
+              <img src="https://i.guim.co.uk/img/media/ed3fe0bc44c15b3407f58e7803be800807badd16/809_669_2109_1266/master/2109.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=431fdecd655209f658845590b103244d" alt="Image 2" class="img-fluid square-image">
+            </div>
+            <div class="col text-center">
+              <img src="https://www.ciwf.org.uk/media/3822342/pig-looking-over-wooden-fencing.jpg?mode=min&width=600&height=315&rnd=132834333960000000" alt="Image 3" class="img-fluid square-image">
+            </div>
+          </div>
+
+
+        <div class="row">
+            <div class="col">
+                <!-- First Dropdown -->
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="animalDropdown" data-toggle="dropdown">
+                    Meat type
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="animalDropdown">
+                    <a class="dropdown-item" href="#" onclick="changeTextAndEnable('Chicken','animalDropdown')">Chicken</a>
+                    <a class="dropdown-item" href="#" onclick="changeTextAndEnable('Beef', 'animalDropdown')">Beef</a>
+                    <a class="dropdown-item" href="#" onclick="changeTextAndEnable('Pork', 'animalDropdown')">Pork</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <!-- Cut selector -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="subDropdown" data-toggle="dropdown" disabled>
+                    Prepared as...
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="subDropdown">
+                    <!-- Options will be inserted here -->
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col">
+                <!-- qty selector -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="qtyDropdown" data-toggle="dropdown" disabled>
+                    Qty
+                    </button>
+                    <div class="dropdown-menu scrollable-dropdown" aria-labelledby="qtyDropdown">
+                    <!-- Options will be inserted here -->
+                    </div>
+                </div>
+            </div>
+            <div class="col"> 
+                <!-- Frequency Dropdown -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="frequencyDropdown" data-toggle="dropdown" disabled>
+                    Choose Frequency
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="frequencyDropdown">
+                    <a class="dropdown-item" href="#" onclick="enableCalculateButton('Day')">Day</a>
+                    <a class="dropdown-item" href="#" onclick="enableCalculateButton('Week')">Week</a>
+                    <a class="dropdown-item" href="#" onclick="enableCalculateButton('Month')">Month</a>
+                    <a class="dropdown-item" href="#" onclick="enableCalculateButton('Year')">Year</a>
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="col">  
+                    <!-- Calculate Button -->
+                    <button class="btn btn-secondary" type="button" id="calculateButton" disabled>
+                        Calculate
+                    </button>
+            </div>
+
+            <div class="col">  
+                <!-- Reset Button -->
+                <button class="btn btn-secondary" type="button" id="resetButton" disabled>
+                    Reset
+                </button>
+            </div> 
+            
+
+        </div>
+
+    </div>
+
+    <div class="container formatted-container">
+        <p>**Please note that this is a mock up with very rough (and sometimes missing) calculations. I hope to do further research to obtain more robust data on this subject.</p>
+
+    </div>
+
+  <!-- jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="script.js" ></script>
+  <script src="animalDeaths.js" ></script>
+  
+</body>
+</html>
