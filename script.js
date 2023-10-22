@@ -90,7 +90,7 @@ function enableSubMenu(subMenu){
   
   const pluralDeaths = (parseInt(deaths)>1) ? 's' : '';
 
-  blurbContainer.innerHTML = `<p>Eating ${qty} ${animal.toLowerCase()} ${meatType.toLowerCase()}${pluralQty} per ${frequency.toLowerCase()} kills approximately ${deaths} ${animalName}${pluralDeaths} in a year.</p>`;
+  blurbContainer.innerHTML = `<p>In the US, Eating ${qty} ${animal.toLowerCase()} ${meatType.toLowerCase()}${pluralQty} per ${frequency.toLowerCase()} kills approximately ${deaths} ${animalName}${pluralDeaths} in a year.</p>`;
   
   // Append the new div to the body
   const mainContainer = document.querySelector(".main-container");
