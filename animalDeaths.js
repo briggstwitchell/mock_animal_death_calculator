@@ -39,6 +39,16 @@ const ground_meat_lbs_per_burger = 0.3125 // source https://www.epicurious.com/e
 const sirloin_pounds_per_cow = 50.5
 const avg_lbs_per_sirloin = 0.625 //equivalent to 10oz steak
 
+
+// PIG
+//========
+const kg_meat_per_pig = 97.6 // source http://www.fao.org/faostat/en/#data/QCL
+const avg_lbs_ham_per_pig = 28// source http://www.fao.org/faostat/en/#data/QCL
+const avg_lbs_loin_meat_per_pig = 23// source http://www.fao.org/faostat/en/#data/QCL
+const avg_lbs_bacon_per_pig = 23// source http://www.fao.org/faostat/en/#data/QCL
+const avg_slices_bacon_per_lb = 16 // source https://www.tysonfoodservice.com/products/wright/pork/bacon/00079621009518
+const avg_slices_of_ham_per_lb = 16// source https://vendingproservice.com/how-many-slices-of-ham-are-in-a-pound/
+
 // FINAL VALUES
 // ============
 const COWS_PER_BURGER = 1/(total_ground_meat_lbs_per_cow * ground_meat_lbs_per_burger)
@@ -48,6 +58,9 @@ const CHICKENS_PER_WING = 0.5;
 const CHICKENS_PER_THIGH = 0.5;
 const CHICKENS_PER_BREAST = 0.5;
 
+const PIGS_PER_BACON_STRIP = 1/(avg_lbs_bacon_per_pig*avg_slices_bacon_per_lb)
+const PIGS_PER_HAM_SLICE = 1/(avg_lbs_ham_per_pig*avg_slices_of_ham_per_lb)
+const PIGS_PER_LOIN = 1/(avg_lbs_loin_meat_per_pig)
 
 const animalDeathValues = {
     'beef':{
@@ -58,6 +71,11 @@ const animalDeathValues = {
         'nugget':CHICKENS_PER_CHICKEN_NUGGET,
         'wing':CHICKENS_PER_WING,
         'thigh':CHICKENS_PER_THIGH,
+    },
+    'pork':{
+        'bacon strips':PIGS_PER_BACON_STRIP,
+        'ham slice':PIGS_PER_HAM_SLICE,
+        '1 lb loin':PIGS_PER_LOIN,
     }
 }
 

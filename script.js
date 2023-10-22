@@ -28,7 +28,7 @@ if (dropDownItem === 'Chicken') {
   options = ['Steak', 'Burger'];
 }
 else if (dropDownItem === 'Pork') {
-  options = ['Bacon strips', 'Chops', ['Slices of ham']];
+  options = ['Bacon strips', '1 lb loin', 'ham slice'];
 }
 
     options.forEach(option => {
