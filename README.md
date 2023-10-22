@@ -1,6 +1,8 @@
 # Mock animal death calculator
 This project is a mock up of a tool I'd like to spend more time creating. This tool calculates the estimated amount of animal deaths per year based on different forms of meat consumption. I've input some very rough estimates as a start, and mostly focused on getting the tool working. I'd like to collaborate with an animal right organization to add this tool to their website as a means to inform meat consumers of the impact of their diet on the number of animals killed in a year. This preliminary implementation is rather sloppy, as I did it in a morning. However, I think it could be recreated as a very impactful tool, given that it's also backed up by robustly research statistics on the number of deaths caused by different forms of meat consumption.
 
+[Click here](https://briggstwitchell.github.io/mock_animal_death_calculator/) to try out the mock tool.
+
 #### The following were used as data sources for calculations:
 
 * http://www.fao.org/faostat/en/#data/QCL
